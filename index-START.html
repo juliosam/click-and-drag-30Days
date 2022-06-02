@@ -48,11 +48,11 @@
     console.log({startX, scrollLeft})
   });
   slider.addEventListener('moseleave',()=>{
-    isDown = false
+    isDown = false;
     slider.classList.remove('active');
   });
   slider.addEventListener('mouseup',()=>{
-    isDown = false
+    isDown = false;
     slider.classList.remove('active');
   });
   slider.addEventListener('mousemove',(e)=>{
@@ -62,8 +62,6 @@
     const walk = (x-startX)*3;
     slider.scrollLeft = scrollLeft - walk;
   });
-
 </script>
-
-  </body>
+</body>
 </html>
